@@ -3,10 +3,11 @@ package diapositivas;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import java.awt.Font;
 
 public class miVentana2 {
 
-	private JFrame frame;
+	private JFrame frmMiventana;
 
 	/**
 	 * Launch the application.
@@ -16,7 +17,7 @@ public class miVentana2 {
 			public void run() {
 				try {
 					miVentana2 window = new miVentana2();
-					window.frame.setVisible(true);
+					window.frmMiventana.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -35,9 +36,10 @@ public class miVentana2 {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmMiventana = new JFrame();
+		frmMiventana.setFont(new Font("Purisa", Font.PLAIN, 12));
+		frmMiventana.setTitle("MiVentana");
+		frmMiventana.setBounds(100, 100, 450, 300);
+		frmMiventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-
 }
