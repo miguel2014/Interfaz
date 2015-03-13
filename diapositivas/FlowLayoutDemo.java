@@ -13,7 +13,6 @@ public class FlowLayoutDemo {
 	private JFrame ventana;
 	
 	public FlowLayoutDemo(String titulo) {
-		// TODO Auto-generated constructor stub
 		ventana=new JFrame(titulo);
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventana.setSize(300, 100);
