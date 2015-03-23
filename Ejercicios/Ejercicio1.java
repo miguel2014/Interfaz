@@ -49,12 +49,13 @@ public class Ejercicio1 {
 		
 		JComboBox Dia = new JComboBox();
 		
-		Integer[] array = null;
+		String [] array = null;
 		
-		for (int i = 1; i < 31; i++) {
-			array[i]=new Integer(i);
+		for (int i = 0; i < 31; i++) {
+			array[i]=(i+1)+"";
 		}
-		Dia.setModel(new DefaultComboBoxModel<Integer>(array));
+		
+		Dia.setModel(new DefaultComboBoxModel<String>(array));
 		panel.add(Dia);
 		
 		
